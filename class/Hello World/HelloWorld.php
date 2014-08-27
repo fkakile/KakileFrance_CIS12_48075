@@ -6,9 +6,8 @@
 </head>
 
 <body>
-	<h1>Our First PHP Page</h1>
     <?php
-	echo "<h1>Our First PHP Page</h1>" 
+	echo "<h1>Hello World</h1>" 
 	?>
 </body>
 </html>
