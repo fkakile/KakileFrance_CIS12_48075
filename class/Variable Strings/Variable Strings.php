@@ -24,5 +24,5 @@
 		echo '<p>Pay Rate = $$payRate </p>';
 		echo "<p>Pay check = $".$grossPay.'</p>';
 	?>
-</body>
+</body>/
 </html>
