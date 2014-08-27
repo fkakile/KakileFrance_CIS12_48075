@@ -7,6 +7,8 @@
 
 <body>
 	<h1>Our First PHP Page</h1>
-    <?php phpinfo(); ?>
+    <?php
+	echo "<h1>Our First PHP Page</h1>" 
+	?>
 </body>
 </html>
