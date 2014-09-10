@@ -2,7 +2,7 @@
 	/*
 		France Kakile
 		Sept 8th, 2014
-		Purpose: Illustrate Branching Constructs
+		Purpose: Illustrate Era
 	*/
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -18,10 +18,22 @@
 	$score=rand(50,100);
 	$grade='';
 	//Determine the Grade
-	$grade=($score>=90)?'A':(
-		   ($score>=80)?'B':(
-		   ($score>=70)?'C':(
-		   ($score>=60)?'D':'F')));
+	switch($score>=90){
+		case true:$grade='A';break;
+		default:
+			switch($score>=80){
+				case true:$grade='B';break;
+				default:
+					switch($score>=70){
+						case true:$grade='C';break;
+						default:
+							switch($score>=60){
+								case true:$grade='D';break;
+								default:$grade='F';
+							}
+					}
+			}
+	}
 	//Output the Results
 	echo "<h1> A score of $score = $grade</h1>";
 ?>

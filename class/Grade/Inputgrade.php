@@ -14,9 +14,8 @@
 
 <body>
 <?php
-	//Intialize the input and declare variables
-	$score=rand(50,100);
-	$grade='';
+//Utilize the built in capabilites of PHP to grab inforemation passed from a form
+	$score=(int)$_GET['score'];
 	//Determine the Grade
 	$grade=($score>=90)?'A':(
 		   ($score>=80)?'B':(

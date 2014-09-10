@@ -2,7 +2,7 @@
 	/*
 		France Kakile
 		Sept 8th, 2014
-		Purpose: Illustrate Era
+		Purpose: Illustrate Branching Constructs
 	*/
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -14,8 +14,9 @@
 
 <body>
 <?php
-	//Intialize the input
+	//Intialize the input and declare variables
 	$score=rand(50,100);
+	$grade='';
 	//Determine the Grade
 	if($score>=90)$grade='A';
 	if($score>=80&&score<90)$grade='B';
